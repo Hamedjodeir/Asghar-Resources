@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Asghar Resources</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+      <button class="tablink" onclick="openPage('OurWebsites', this, '#035aa6')" id="defaultOpen">Our Websites</button>
+      <button class="tablink" onclick="openPage('Links', this, 'orange')">Links</button>
+      <button class="tablink" onclick="openPage('Articles', this, 'green')">Articles & Videos</button>
+      <button class="tablink" onclick="openPage('Proceedings', this, 'blue')">Proceedings</button>
+
+
+      <!-- **************  Links *********** -->
+      <div id="Links" class="tabcontent">
+        <h3>Links</h3>
+        <ul>
+          <li> <a href="https://www.trycaviar.com">https://www.trycaviar.com</a> </li>
+          <li> <a href="https://www.mercatus.com">https://www.mercatus.com</a> </li>
+          <li> <a href="https://www.zoomg.ir">https://www.zoomg.ir</a> </li>
+          <li> <a href="https://www.wired.com">https://www.wired.com</a> </li>
+          <li> <a href="https://www.spotify.com/us/">https://www.spotify.com/us/</a> </li>
+          <li> <a href="https://diablo4.blizzard.com/en-us/">https://diablo4.blizzard.com/en-us/</a> </li>
+          <li> <a href="https://www.puzzle-inn.fr">https://www.puzzle-inn.fr</a> </li>
+          <li> <a href="https://bankmellat.ir">https://bankmellat.ir</a> </li>
+          <li> <a href="https://www.shatel.ir">https://www.shatel.ir</a> </li>
+          <li> <a href="https://chess24.com">https://chess24.com</a> </li>
+          <li> <a href="https://www.rocketsource.co">https://www.rocketsource.co</a> </li>
+
+        </ul>
+      </div>
+
+      <!-- ************************************  Articles & Videos *************************************** -->
+      <div id="Articles" class="tabcontent">
+
+        <!-- ==========  Articles ========= -->
+        <h3>Articles</h3>
+        <ul>
+          <li> <a href="https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e">Normalize CSS or CSS Reset?!</a> </li>
+
+        </ul>
+
+        <br class="br">
+
+        <!-- ============= Videos ============ -->
+        <h3>Videos</h3>
+        <ul>
+          <li> <a href="https://downloadly.ir/elearning/video-tutorials/advanced-css-and-sass/">Advanced CSS and Sass</a> </li>
+          <li> <a href="https://downloadly.ir/elearning/video-tutorials/udemy-css-the-complete-guide-incl-flexbox-grid-sass/">CSS – The Complete Guide incl. Flexbox, Grid & Sass</a> </li>
+          <li> <a href="https://downloadly.ir/elearning/video-tutorials/build-responsive-real-world-websites-html5-css3/">Build Responsive Real World Websites with HTML5 and CSS3</a> </li>
+
+        </ul>
+      </div>
+
+
+      <!-- ************************************  Proceedings *************************************** -->
+      <div id="Proceedings" class="tabcontent">
+        <h3>Proceedings</h3>
+
+        <ul>
+          <li> <a href="S - 1399-05-17.pdf">1399-05-17</a> </li>
+        </ul>
+      </div>
+
+
+      <!-- ************************************  Our Websites *************************************** -->
+      <div id="OurWebsites" class="tabcontent">
+        <h3 class="websites-h3  top-h3">Websites</h3>
+        <div class="websites">
+          <a href="https://hamedjodeir.github.io/Sharp-Market/index.html">Hamed</a>
+          <a href="#">Behnam</a>
+          <a href="#">Sina</a>
+        </div>
+
+        <!-- ===============  Resources =========== -->
+        <h3 class="websites-h3">Resources</h3>
+
+        <div class="websites websites-bottom">
+          <a href="https://github.com/Hamedjodeir/Sharp-Market">Hamed</a>
+          <a href="#">Behnam</a>
+          <a href="#">Sina</a>
+        </div>
+
+      </div>
+      <script>
+        function openPage(pageName, elmnt, color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+
+        document.getElementById("defaultOpen").click();
+      </script>
+
+  </body>
+</html>

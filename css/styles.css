@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tabcontent a {
+  color: white;
+}
+
+.tabcontent li {
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.tabcontent ul {
+  margin-top: 3%;
+}
+
+.websites {
+  text-align: center;
+  margin-top: 8%;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.websites a {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: #c4fb6d;
+  color: #084177;
+  border-radius: 45%;
+  padding: 5%;
+  margin: 5%;
+  font-size: 180%;
+}
+.websites a:hover {
+  background-color: #084177;
+  color: #c4fb6d;
+}
+
+.websites-h3 {
+  color: #c4fb6d;
+  font-size: 170%;
+  margin-left: 4%;
+  margin-top: 0.5%;
+}
+
+.top-h3 {
+  margin-top: -2%;
+}
+
+.websites-bottom {
+  margin-bottom: 0;
+}
+
+
+#Links {
+  background-color: orange;
+}
+
+#Articles {
+  background-color: green;
+}
+
+#Proceedings {
+  background-color: blue;
+}
+
+#OurWebsites {
+  background-color: #035aa6;
+}
