@@ -52,16 +52,17 @@ body, html {
 }
 
 .websites a {
+  transition: 1s;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  background-color: #c4fb6d;
-  color: #084177;
-  border-radius: 45%;
-  padding: 5%;
+  color: rgb(221, 251, 200);
+  border-radius: 46%;
+  padding: 4%;
   margin: 5%;
-  font-size: 100%;
+  font-size: 190%;
 }
+
 .websites a:hover {
   transition: 1s;
   background-color: #084177;
